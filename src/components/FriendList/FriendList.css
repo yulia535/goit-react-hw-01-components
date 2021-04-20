@@ -1,0 +1,30 @@
+.friendList .item {
+  width: 200px;
+  list-style-type: none;
+  padding: 0px;
+  margin: auto;
+  border: solid 2px blueviolet;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.status {
+  width: 40px;
+  display: block;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+}
+.isOnline {
+  background-color: green;
+}
+
+.isOffline {
+  background-color: red;
+}
