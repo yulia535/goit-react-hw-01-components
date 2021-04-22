@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './FriendList.css';
+import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
-  <ul className="friendList">
+  <ul className={styles.friendList}>
     {friends.map(friend => (
-      <li className="item" key={friend.id}>
+      <li className={styles.item} key={friend.id}>
         <FriendListItem
           avatar={friend.avatar}
           name={friend.name}
@@ -27,11 +27,11 @@ export default FriendList;
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <div>
     {isOnline ? (
-      <span className="status isOnline"></span>
+      <span className={(styles.status, styles.isOnline)}></span>
     ) : (
-      <span className="status isOffline"></span>
+      <span className={(styles.status, styles.isOffline)}></span>
     )}
-    <img className="avatar" src={avatar} alt="" width="48" />
+    <img className={styles.avatar} src={avatar} alt="" width="48" />
     <p className="name">{name}</p>
   </div>
 );

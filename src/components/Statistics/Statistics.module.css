@@ -4,12 +4,12 @@
   margin-left: auto;
   margin-right: auto;
 }
-.stat-list {
+.statList {
   display: flex;
   list-style-type: none;
   padding: 0px;
 }
-.stat-list .item {
+.statList .item {
   width: 100px;
   padding: 10px;
   text-align: center;
